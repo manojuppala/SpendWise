@@ -1,0 +1,28 @@
+This project has been migrated from Firebase to Supabase!
+
+IMPORTANT: You MUST set up your own Supabase project to use this app.
+
+Quick Start:
+1. npm install --legacy-peer-deps
+2. Set up Supabase (see SUPABASE_SETUP.md for detailed instructions)
+3. npm start
+
+Supabase Setup (Required)
+- See SUPABASE_SETUP.md for complete step-by-step instructions
+- Go to https://supabase.com and create a new project
+- Copy your Project URL and API key to config/supabase.ts
+- Run the SQL commands in SUPABASE_SETUP.md to create tables
+- Enable Row Level Security policies
+
+Cloudinary Setup (Optional - for image uploads)
+- Go to https://cloudinary.com and create an account
+- Find the cloudName in settings->API KEYS or in settings->Product Environments
+- Copy the cloudName and replace it in CLOUDINARY_CLOUD_NAME in constants/index.ts file
+- Go to settings-> Upload Presets and Add Upload Preset (give it a name, change signing mode to Unsigned and save it)
+- Copy the upload preset name and replace it in CLOUDINARY_UPLOAD_PRESET in constants/index.ts file
+
+That's it! Now you can run the app:
+- npm install --legacy-peer-deps
+- npm start
+
+Enjoy 😉
